@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Article Contents</title>
+</head>
+
+<body>
+
+<div id="wikiInfo">&nbsp;</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+var articleTitle = localStorage.title;
+var url = 'http://en.wikipedia.org/w/api.php?action=parse&page='+articleTitle+'&format=json&callback=?';
+
+$.getJSON(url, function(json) { 
+    $("#wikiInfo").html(json.parse.text['*']); 
+    $("#wikiInfo").find("a:not(.references a)").attr("href", function(){ return "http://www.wikipedia.org" + $(this).attr("href");}); 
+    $("#wikiInfo").find("a").attr("target", "_blank"); 
+  });
+    
+</script>
+</body>
+</html>

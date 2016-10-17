@@ -1,0 +1,38 @@
+	body {
+			background-image: url("http://files.softicons.com/download/application-icons/light-icons-by-martz90/png/512x512/wikipedia.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center; 
+			
+			margin: 0;
+			padding: 0;
+			
+	}
+	
+	
+	h2{
+	text-align: center;
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+	div div{
+		height: 250px;
+		margin: 0;
+		padding: 0;
+		border-radius: 5px;
+	
+	}
+	 div #results{
+			padding:0;
+			margin:0;
+	}
+	#well0, #well1, #well2, #well3, #well4, #well5, #well6, #well7, #well8, #well9{
+			padding:0;
+			margin:0;
+	
+	}
+	#text{
+		width: 85%;
+	
+	}
